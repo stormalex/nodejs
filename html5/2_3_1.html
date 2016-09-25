@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>文档结构元素</title>
+</head>
+<body>
+	<article>
+		<!-- 帖子的头部 -->
+		<header>
+			<h1>学习安卓，必须先学习java吗</h1>
+			<div>作者：crazystu</div>
+		</header>
+		<p>学习安卓，必须先学习java吗？
+		安卓上的应用程序只能用java编写吗？可以用C++吗</p>
+		<!-- 帖子的回复部分， 用section元素表示 -->
+		<section>
+			<!-- 每个article代表一个回复 -->
+			<article>
+				<!-- 回复的头部 -->
+				<header>
+					<h2>还是得学习java</h2>
+					<dir>作者：kongyeeku</dir>
+				</header>
+				<p>虽然安卓不一定用java开发，还可以选择JavaScript<br/>
+				或者NDK开发，但java比较是安卓的注意开发语言<br/>
+				因此建议学习安卓之前先学习java</p>
+			</article>
+
+			<!-- 每个article代表一个回复 -->
+			<article>
+				<!-- 回复的头部 -->
+				<header>
+					<h2>java是基础</h2>
+					<dir>作者：kuan008</dir>
+				</header>
+				<p>java是基础，学号java再去学习安卓事半功倍</p>
+			</article>
+		</section>
+		<!-- 帖子的脚注 -->
+		<footer>
+			以上帖子和回复只代表其个人观点，不代表XXX的观点或立场
+		</footer>
+	</article>
+	
+</body>
+</html>
