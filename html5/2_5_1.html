@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>启动拖动</title>
+</head>
+<body>
+	
+	<a href="http://www.baidu.com">百度搜索</a>
+	<img src="image/baidu_logo.png" alt="baidu"/>
+
+	<div id="source" style="width:80px;height: 80px; border:1px solid black; background-color: #bbb;" draggable="true">百度搜索引擎</div>
+
+	<script type="text/javascript">
+		var source = document.getElementById('source');
+		source.ondragstart = function (evt) {
+			evt.dataTransfer.setData("text/plain", "www.baidu.com")
+		}
+	</script>
+
+</body>
+</html>
